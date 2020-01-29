@@ -1,0 +1,573 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway|Roboto+Condensed&display=swap");
+
+/*===========================================
+global
+=======================================*/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    color: #111;
+}
+
+section {
+    padding: 40px 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1,
+h2,
+h3,
+h4.h5,
+h6 {
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+h2 {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+/*==================================
+menu start
+====================================*/
+
+#mainNav {
+    background-color: rgba(0, 0, 0, 0.9);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-family: 'Khand', sans-serif;
+    color: #fff !important;
+}
+
+.navbar-brand p {
+    font-size: 0.84rem;
+    margin-top: -5px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar-brand img {
+    width: 60px;
+}
+
+.navbar {
+    -webkit-transition: width 2s;
+    /* Safari */
+    transition: width 2s;
+}
+
+.nav-item a {
+    color: #fff !important;
+}
+
+.navbar button {
+    background-color: #ED3268;
+    color: #000;
+    padding: 0 20px;
+    font-size: 15px;
+}
+
+.navbar button:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.navbar-nav .nav-link.active {
+    background: #ED3268 !important;
+}
+
+.nav-item:hover {
+    background-color: #ED3268;
+    color: black;
+}
+
+
+/*=========================================
+banner start
+===========================================*/
+
+.banner {
+    padding: 0;
+    background-image: url(../image/architecture-1836070_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    color: white;
+    background-attachment: fixed;
+}
+
+.banner:before {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.banner h1 {
+    padding-top: 90px;
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.banner h3 {
+    font-size: 62px;
+    font-weight: bold;
+    color: $primary_color;
+    border-top: 2px solid $primary_color;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.banner h4 span {
+    font-family: 'Raleway', sans-serif !important;
+    font-size:25px;
+}
+
+.banner h4 {
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 25px;
+    padding: 0 15px 0px 0px;
+}
+
+.banner button {
+    background-color:  #ED3268;
+    width: 100%;
+    border: none !important;
+    
+}
+
+
+.subscribe {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 60px 15px;
+    top: 0;
+    height: 100vh;
+    z-index: 30;
+}
+.banner_form{
+    padding: 12px 0 !important;
+}
+
+.navigation_menu{
+    
+}
+/*==========================================================
+cta start
+============================================================*/
+
+.cta {
+
+    text-align: center;
+    /*background-image: url(../image/architecture-2175925_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;*/
+    color: black;
+    background-color: #ccc;
+}
+
+/*
+.cta:before {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+ 
+}
+*/
+
+.cta i {
+    font-size: 20px;
+    color: black;
+}
+.cta button{
+    background-color: #ED3268 !important;
+    padding: 22px;
+    margin-bottom: 5px;     
+    width: 190px;
+}
+.cta h3 {
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.cta_btn i {
+    color: black;
+}
+
+.cta h3 span {
+    font-size: 20px;
+}
+
+
+
+/*=====================================================*/
+
+.youtube_vedio {
+    padding: 0;
+}
+
+
+/*======================================================
+testimonial start
+========================================================*/
+
+.testimonial {
+    background-color: #E8EFBA;
+}
+
+.testimonial_details img {
+    width: 15%;
+}
+
+.testimonial_details h6 {
+    font-weight: bold;
+    padding-top: 15px;
+    text-align: center;
+}
+
+
+/*=======================================================
+carousel
+===================================================*/
+
+.owl-dots {
+    text-align: center;
+}
+
+.owl-dot {
+    border: 1px solid #000 !important;
+    width: 10px !important;
+    height: 10px !important;
+    margin: 5px !important;
+    border-radius: 50%;
+}
+
+.owl-dot.active {
+    background: #ED3268 !important;
+}
+
+.navbar-toggler {
+    padding: 10px 20px !important;
+    position: relative;
+}
+
+.navbar-toggler:before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 5px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    top: 15px;
+    left: 10%;
+}
+
+.navbar-toggler:after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 5px;
+    border-top: 1px solid #fff;
+    top: 24px;
+    left: 10%;
+}
+
+
+/*======================================================
+about section start
+========================================================*/
+
+.about {
+    text-align: center;
+}
+
+.about img {
+    width: 300px;
+}
+
+.about h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.about h5 {
+    font-size: 18px;
+    text-align: left;
+    padding: 15px 0 0 0;
+}
+
+.about p {
+    font-size: 17px;
+    text-align: left;
+    padding: 15px 0 15px 0;
+    color: #7A7A7A;
+}
+
+.about p span,
+.about ul li span {
+    font-weight: bold;
+}
+
+.map img {
+    width: 90%;
+    padding-bottom: 20px;
+}
+
+.about h3 {
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.about ul li {
+    text-align: left;
+    list-style-type: disc;
+    font-size: 18px;
+    color: #7A7A7A;
+    padding: 5px 0;
+}
+
+.about button {
+    background-color: #ED3268 !important;
+    padding: 22px;
+    margin-bottom: 5px;     
+    width: 190px;
+}
+
+.about button:hover {
+    background-color: black;
+    color: #212529;
+    text-decoration: none;
+}
+
+
+/*======================================================
+exchane saciton start
+========================================================*/
+
+.exchange {}
+
+.exchange h2 {
+    font-weight: bold;
+    font-size: 22px;
+    padding-top: 20px;
+}
+
+.exchange h2 span {
+    font-weight: 300;
+}
+
+.exchange ul li {
+    list-style-type: disc;
+    font-size: 14px;
+    color: #7A7A7A;
+    padding: 10px;
+}
+
+.exchange p {
+    font-size: 18px;
+    color: #7A7A7A;
+    padding: 18px 15px;
+}
+
+.exchange h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px 0 0 0;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.gallery h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.gallery_col {
+    padding: 5px;
+}
+
+
+/*=====================================================
+location section start
+======================================================*/
+
+.location {
+    text-align: center;
+}
+
+.location h1 {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.location p {
+    font-size: 18px;
+    color: #7A7A7A;
+    padding: 18px 15px;
+    text-align: left;
+}
+
+.location p span {
+    font-weight: bold;
+}
+
+
+/*====================================================
+developer section start
+==========================================================*/
+
+.developer {
+    text-align: center;
+}
+
+.developer img {
+    width: 200px;
+    padding-bottom: 20px;
+}
+
+.developer p {
+    font-size: 18px;
+    color: #7A7A7A;
+    text-align: left;
+    padding: 0 10px;
+}
+
+
+/*======================================================
+register section start
+=======================================================*/
+
+.register {
+    text-align: center;
+}
+
+.register p {
+    font-size: 18px;
+    color: #7A7A7A;
+      text-align: center;
+}
+
+.register img{
+    width: 200px;
+}
+/*=====================================================
+contact start
+=======================================================*/
+.contact{
+    text-align: center;
+}
+.form-group {
+    margin-bottom: 1rem;
+    padding: 20px;
+}
+.col-form-label {
+    padding-top: calc(.375rem + 1px);
+    padding-bottom: calc(.375rem + 1px);
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: 1.5;
+    text-align: left;
+}
+.contact button{
+    background-color: #ED3268 !important;
+    padding: 22px;
+    width: 190px;
+}
+.contact P{
+     font-size: 18px;
+    color: #7A7A7A;
+    text-align: left;
+}
+/*======================================================
+footer_contact
+=========================================================*/
+.footer_contact{}
+.leftside{
+  text-align: right;
+}
+.leftside p{
+     font-size: 18px;
+    color: #7A7A7A;
+     text-align: left;
+}
+.rightside{
+    padding: 25px 15px;
+}
+/*=====================================================
+footer start
+=======================================================*/
+.footer-bottom {
+    position: relative;
+    text-align: center;
+    padding: 12px 20px;
+}
+
+.footer-bottom a,
+.footer-bottom {
+    color: #000;
+}
+
+.footer-bottom i {
+    float: right;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #cddc39;
+}
+
+
+/*====================================================
+responcive start
+======================================================*/
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 70px;
+    }
+    #curvedarrow {
+        display: none;
+    }
+    .media {
+        display: block;
+    }
+}
+
+
+/*# sourceMappingURL=style.css.map */

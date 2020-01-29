@@ -1,0 +1,666 @@
+@import url("https://fonts.googleapis.com/css?family=Khand&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+
+/*===========================================
+global
+=======================================*/
+
+html,
+body {
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 1rem;
+}
+
+section {
+    padding: 40px 0;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    margin-bottom: 30px;
+    position: relative;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+/*===================================
+           heading start
+=====================================*/
+
+.heading {
+    padding: 5px 10px;
+    background: #5cc;
+}
+
+.heading ul {
+    margin: 0px;
+    padding: 0;
+}
+
+.heading li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 20px;
+    color: #fff;
+}
+
+.heading li a {
+    color: #ffe;
+}
+
+
+/*==================================
+menu start
+====================================*/
+
+#mainNav {
+    background-color: rgba(250, 255, 255, 0.9);
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-family: 'Khand', sans-serif;
+    color: #fff !important;
+}
+
+.navbar-brand p {
+    font-size: 0.84rem;
+    margin-top: -5px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar-brand img {
+    width: 60px;
+}
+
+.navbar {
+    -webkit-transition: width 2s;
+    /* Safari */
+    transition: width 2s;
+}
+
+.nav-item a {
+    color: #000 !important;
+    text-shadow: 0 0 2px #F2F4EC;
+}
+
+.navbar button {
+    background-color: #5cc;
+    color: #000;
+    padding: 0 20px;
+    font-size: 15px;
+}
+
+.navbar button:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.navbar-nav .nav-link.active {
+    background: #5cc !important;
+}
+
+.nav-item:hover {
+    background-color: #5cc;
+    color: black;
+}
+
+
+/*=========================================
+banner start
+===========================================*/
+
+.banner {
+    padding: 180px 0 20px 0;
+    background-image: url(../image/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    color: white;
+    background-attachment: fixed;
+}
+
+.banner:before {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: url(../image/arrow.png);
+}
+
+.banner h1 {
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.banner h3 {
+    font-size: 62px;
+    font-weight: bold;
+}
+
+.banner h4 span {
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 15px;
+}
+
+.banner h4 {
+    font-family: 'Raleway', sans-serif !important;
+    font-size: 18px;
+    padding: 0 15px 0px 0px;
+}
+
+.banner button {
+    background-color: #5cc;
+}
+
+
+/*==========================================================
+contact form
+=============================================================*/
+
+.contact {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+}
+
+.form-control {
+    border-color: #777 !important;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.contact h2 span {
+    font-size: 20px;
+}
+
+.subs-form {
+    width: 100%;
+    padding: 20px 15px;
+}
+
+.form-control {
+    background-color: transparent;
+}
+
+
+/*=============================================================
+about start
+===============================================================*/
+
+.about {
+    padding-bottom: 0;
+}
+
+.abouts_details {
+    padding: 10px 0 0 0;
+}
+
+.about h2,
+.about p {
+    text-align: center;
+}
+
+.about_leftside h1,
+.about_leftside p {
+    text-align: left;
+}
+
+.about_leftside p {
+    padding: 15px 0;
+}
+
+.about_leftside p span {
+    font-weight: bold;
+}
+
+.about_rightside {
+    padding: 20px 25px;
+}
+
+.about_rightside ul li i {
+    color: #5cc;
+    padding: 0 15px;
+}
+
+.about_rightside ul {
+    padding: 0;
+}
+
+.about_rightside ul li {
+    padding: 10px 0;
+    color: black;
+}
+
+
+/*================================================================
+video start
+==================================================================*/
+
+.video {
+    background-image: url(../image/maxresdefault.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    background-attachment: fixed;
+}
+
+.video:before {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+    background-image: url(../image/arrow.png);
+    /* background-color: rgba(0, 0, 0, 0.3);*/
+}
+
+.vdo {
+    text-align: center;
+}
+
+.vdo i {
+    padding: 10px 0 0 0;
+    font-size: 90px;
+    color: white;
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-15px);
+    }
+}
+
+@-webkit-keyframes bounce {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-15px);
+    }
+}
+
+
+/*==========================================================
+why choose us start
+============================================================*/
+
+.why_choose {
+    background-color: #5cc;
+    text-align: center;
+}
+
+
+.why_choose h5 {
+    font-weight: bold;
+}
+
+.why_choose_media {
+    min-height: 280px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid black;
+    margin-bottom: 30px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: all 2s;
+}
+
+.why_choose_media:before {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: url(../image/arrow.png);
+     z-index: 1;
+}
+.choose-teaser{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(1.6);
+    transition: all 1s ease;
+   
+}
+.text {
+    position: relative;
+    z-index: 3;
+}
+
+.why_choose i {
+    font-size: 35px;
+    margin: 10px;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: #5cc;
+    border-radius: 20%;
+    -webkit-transition: all 4s;
+    /* For Safari 3.1 to 6.0 */
+    transition: all 4s;
+}
+
+.card-text {
+    visibility: hidden;
+    color: white;
+    height: 0;
+    
+}
+
+.why_choose_media:hover .card-text {
+   
+    height: 10px;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 2s linear;
+}
+
+.why_choose_media:hover i {
+    margin-top: -20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
+.why_choose_media:hover .choose-teaser{
+    transform: scale(1.8);
+  
+   
+}
+
+/*========================= ============================================
+feature start
+=======================================================================*/
+
+.features {
+    padding-top: 0;
+    padding-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.features_details {
+    padding: 45px 0 100px 0;
+    text-align: center;
+    background-image: url(../image/architecture-1836070_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.features_details:before {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url(../image/arrow.png);
+}
+
+.features_details_content {
+    position: relative;
+    color: white;
+}
+
+.features_details p {
+    padding: 0 15px;
+}
+
+.features i {
+    margin: -70px 10% 5% 10%;
+    padding: 10%;
+    border: 6px solid white;
+    border-radius: 50%;
+    background-color: #5cc;
+}
+
+
+/*======================================================
+testimonial start
+========================================================*/
+
+.testimonial h2,
+.testimonial p {
+    text-align: center;
+}
+
+.testimonial_details img {
+    /*width: 15%;*/
+    border-radius: 50%;
+}
+
+.testimonial_details h6 {
+    font-weight: bold;
+    padding-top: 15px;
+    text-align: center;
+}
+
+
+/*=======================================================
+carousel
+===================================================*/
+
+.owl-dots {
+    text-align: center;
+}
+
+.owl-dot {
+    border: 1px solid #5ff1cc !important;
+    width: 10px !important;
+    height: 10px !important;
+    margin: 5px !important;
+    border-radius: 50%;
+}
+
+.owl-dot.active {
+    background: #5ff1cc !important;
+}
+
+.navbar-toggler {
+    padding: 10px 20px !important;
+    position: relative;
+}
+
+.navbar-toggler:before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 5px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    top: 15px;
+    left: 10%;
+}
+
+.navbar-toggler:after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 5px;
+    border-top: 1px solid #fff;
+    top: 24px;
+    left: 10%;
+}
+
+
+/*==========================================================
+cta start
+============================================================*/
+
+.cta {
+    padding: 25px 0 0 0;
+    text-align: center;
+    background-image: url(../image/cta.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    color: white;
+}
+
+.cta:before {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: url(../image/arrow.png);
+}
+
+.cta-img img {
+    height: 230px;
+    margin: -100px 0 0 0;
+}
+
+.cta i {
+    font-size: 20px;
+    color: white;
+}
+
+.cta h3 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.cta_btn {
+    color: white;
+}
+
+.cta_btn i {
+    color: black;
+}
+
+.cta h3 span {
+    font-size: 20px;
+}
+
+.cta a {
+    background-color: #5cc;
+    margin-top: 30px;
+}
+
+
+/*=====================================================
+footer start
+=======================================================*/
+
+.footer-bottom {
+    position: relative;
+    background-color: #5cc;
+    text-align: center;
+    padding: 12px 20px;
+}
+
+.footer-bottom a,
+.footer-bottom {
+    color: white;
+}
+
+.footer-bottom i {
+    float: right;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #5cc;
+}
+
+
+/*==========================================================
+pop-up-vdo start
+============================================================*/
+
+.pop-up-vdo {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    z-index: 999999;
+    display: none;
+}
+
+.vdo_close {
+    padding: 10px 18px;
+    background-color: #5cc;
+    float: right;
+    margin-right: 15px;
+}
+
+.pop-up-vdo iframe {
+    margin: 0 5%;
+    width: 90%;
+    height: 90%;
+}
+
+
+/*====================================================
+responcive start
+======================================================*/
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 70px;
+    }
+    #curvedarrow {
+        display: none;
+    }
+    .features i {
+        margin: 2%;
+        padding: 10%;
+        border: 6px solid white;
+        border-radius: 50%;
+        background-color: #5ff1cc;
+    }
+    .media {
+        display: block;
+    }
+    .cta-img img {
+        height: 230px;
+        margin: 0;
+    }
+}
